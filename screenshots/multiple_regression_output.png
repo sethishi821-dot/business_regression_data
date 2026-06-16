@@ -1,0 +1,53 @@
+Dependent Variable: monthly_sales
+
+Independent Variables:
+
+marketing_spend (numerical)
+footfall (numerical)
+customer_rating (numerical)
+region_North (dummy)
+region_South (dummy)
+region_West (dummy)
+
+Reference category for the dummy variables: East region
+
+Regression Equation
+Monthly Sales=
+	​
+
+343,883.59
++1.1691(Marketing Spend)
++33.9680(Footfall)
++8,846.26(Customer Rating)
++15,569.39(Region North)
++26,140.64(Region South)
++22,266.07(Region West)
+	​
+
+Model Performance
+Metric	Value
+R-squared	0.7940
+
+Interpretation:
+The model explains approximately 79.4% of the variation in monthly sales, indicating a strong overall fit.
+
+Coefficient Interpretation
+Variable	Coefficient	P-value	Interpretation
+Marketing Spend	1.1691	< 0.001	Positive and statistically significant. Every additional ₹1 spent on marketing is associated with about ₹1.17 higher sales.
+Footfall	33.9680	< 0.001	Strong positive effect. Each additional visitor is associated with about ₹33.97 higher sales.
+Customer Rating	8,846.26	0.0849	Positive effect, but not statistically significant at the 5% level.
+Region North	15,569.39	0.0432	Stores in North generate about ₹15,569 more sales than East stores, holding other factors constant.
+Region South	26,140.64	0.0008	South stores generate significantly higher sales than East stores.
+Region West	22,266.07	0.0012	West stores generate significantly higher sales than East stores.
+Intercept Interpretation
+
+The intercept (₹343,883.59) represents the predicted monthly sales when all numerical variables equal zero and the store belongs to the reference category (East region). While mathematically necessary, it has limited practical business meaning because zero values for these variables are unlikely in reality.
+
+Direction of Relationships
+Variable	Direction
+Marketing Spend	Positive
+Footfall	Positive
+Customer Rating	Positive
+Region North	Positive
+Region South	Positive
+Region West	Positiv
