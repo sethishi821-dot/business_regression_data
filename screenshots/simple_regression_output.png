@@ -1,0 +1,39 @@
+Model 1: Monthly Sales vs Marketing Spend
+
+Regression Equation
+
+Monthly Sales=560,777.35+2.1296(Marketing Spend)
+Metric	Value
+Coefficient	2.1296
+R-squared	0.1672
+P-value	2.48 × 10⁻¹⁴
+
+Business Interpretation
+
+For every additional ₹1 spent on marketing, monthly sales increase by approximately ₹2.13.
+The relationship is statistically significant because the p-value is less than 0.05.
+Marketing spend explains 16.7% of the variation in monthly sales.
+
+Is the Variable Useful?
+
+Yes. Marketing spend has a significant positive effect on sales, although it is not a very strong predictor by itself.
+
+Model 2: Monthly Sales vs Footfall
+
+Regression Equation
+
+Monthly Sales=446,410.58+35.6780(Footfall)
+Metric	Value
+Coefficient	35.6780
+R-squared	0.7363
+P-value	4.75 × 10⁻⁹⁴
+
+Business Interpretation
+
+Each additional customer visit increases monthly sales by approximately ₹35.68.
+The relationship is highly statistically significant.
+Footfall explains 73.6% of the variation in monthly sales.
+
+Is the Variable Useful?
+
+Yes. Footfall is a very strong predictor of monthly sales and appears to be one of the most influential variables in the dataset.
