@@ -1,0 +1,60 @@
+Workbook Contents
+Sheet 1: store_performance
+320 rows × 14 columns
+Contains monthly business performance data for stores.
+
+Columns:
+
+store_id
+month
+region
+store_type
+marketing_spend
+footfall
+avg_discount_pct
+staff_count
+inventory_availability_pct
+competitor_distance_km
+holiday_flag
+customer_rating
+monthly_sales
+monthly_profit
+
+Sample record:
+
+store_id	month	region	customer_rating	monthly_sales	monthly_profit
+STR-1001	2025-01	East	3.1	658,832.62	84,349.93
+Sheet 2: data_dictionary
+14 rows × 2 columns
+Provides descriptions for each field.
+
+Examples:
+
+store_id → Unique store identifier
+month → Reporting month
+region → Business region
+store_type → Mall, High Street, Residential, or Airport
+marketing_spend → Monthly marketing spend for the store
+Data Quality Notes
+competitor_distance_km has 6 missing values.
+customer_rating has 8 missing values.
+All other columns appear complete.
+Suitable Regression Targets
+
+The dataset is well suited for regression analysis, especially:
+
+Predict monthly_sales
+Predict monthly_profit
+
+Potential predictors:
+
+Marketing spend
+Footfall
+Discount percentage
+Staff count
+Inventory availability
+Competitor distance
+Holiday flag
+Customer rating
+Region (categorical)
+Store type (categorical)
